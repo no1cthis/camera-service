@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "camera-service"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0.3"
+grpcio = "^1.63.0"
+grpcio-tools = "^1.63.0"
+requests = "2.31.0"
+toml = "^0.10.2"
+opencv-python = "^4.9.0.80"
+
+[tool.poetry.scripts]
+start = "camera_service.__init__:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
